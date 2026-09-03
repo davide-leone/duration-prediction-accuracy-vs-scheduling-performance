@@ -19,7 +19,7 @@ The complete experimental pipeline is illustrated in Figure 1.
 ## Experimental Workflow
 
 <p align="center">
-  <img src="docs/figures/experimental_pipeline.png"
+  <img src="images/pipeline_colored.png"
        alt="Experimental pipeline"
        width="900">
 </p>
