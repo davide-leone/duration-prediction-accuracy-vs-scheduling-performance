@@ -14,7 +14,7 @@ The repository is organized into three main directories that collectively reprod
 
 3. **Metric Analysis**
 
-The complete experimental pipeline is illustrated in Figure 1.
+The complete experimental pipeline is illustrated below.
 
 <p align="center">
   <img src="images/pipeline_colored.png"
