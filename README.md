@@ -8,7 +8,7 @@ The repository is organized into three main directories that collectively reprod
 
    * Data Preparation
    * Workload Generation
-   * Runtime Prediction
+   * Job Duration Prediction
 
 2. **Workload Management Simulation**
 
@@ -24,8 +24,7 @@ The complete experimental pipeline is illustrated in Figure 1.
        width="900">
 </p>
 
-**Figure 1.** Overview of the experimental workflow. The study consists of five phases: Data Preparation, Workload Generation, Runtime Prediction, Workload Management Simulation, and Metric Analysis.
-
+**Figure 1.** Overview of the experimental workflow.
 ---
 
 # 1. Job Duration Prediction
@@ -58,6 +57,8 @@ These files correspond to the processed and enriched versions used throughout th
 The original FDATA dataset is publicly available on Zenodo:
 
 * FDATA Dataset: https://zenodo.org/records/11467483
+
+As the full dataset is very large, we evaluate prediction and scheduling on a one-month subset from April 2022.
 
 ```text
 datasets/fdata/
