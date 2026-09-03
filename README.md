@@ -2,21 +2,29 @@
 
 This repository contains the datasets, source code, simulation framework, experimental results, and analysis notebooks used in the paper on **Impact of Job Duration Prediction Accuracy on HPC Scheduling Performance**.
 
-The repository is organized according to the three phases of the study:
+The repository is organized into three main directories that collectively reproduce the five phases of the experimental workflow presented in the paper:
 
-1. **Job Duration Prediction**, which includes also **Data Preparation** and **Workload Generation**
+1. **Job Duration Prediction**, including:
+
+   * Data Preparation
+   * Workload Generation
+   * Runtime Prediction
+
 2. **Workload Management Simulation**
+
 3. **Metric Analysis**
 
----
+The complete experimental pipeline is illustrated in Figure 1.
 
-# Repository Structure
+## Experimental Workflow
 
-```text
-├── 1 - Job Duration Prediction
-├── 2 - Workload Management Simulation
-└── 3 - Metric Analysis
-```
+<p align="center">
+  <img src="docs/figures/experimental_pipeline.png"
+       alt="Experimental pipeline"
+       width="900">
+</p>
+
+**Figure 1.** Overview of the experimental workflow. The study consists of five phases: Data Preparation, Workload Generation, Runtime Prediction, Workload Management Simulation, and Metric Analysis.
 
 ---
 
@@ -30,18 +38,26 @@ Two production HPC datasets are included:
 
 ### PM100 (Marconi100)
 
+The original PM100 dataset is publicly available on Zenodo:
+
+* PM100 Dataset: https://zenodo.org/records/10127767
+
 ```text
 datasets/pm100/
 ```
 
 Contains:
 
-* `job_table.parquet` – original dataset
-* `job_data_full.parquet` – enriched dataset with historical features
 * `job_data_train.parquet` – training subset
 * `job_data_test.parquet` – test subset
 
+These files correspond to the processed and enriched versions used throughout the experiments, after the chronological 70%/30% train-test split adopted in the paper.
+
 ### FDATA (Fugaku)
+
+The original FDATA dataset is publicly available on Zenodo:
+
+* FDATA Dataset: https://zenodo.org/records/11467483
 
 ```text
 datasets/fdata/
@@ -49,12 +65,10 @@ datasets/fdata/
 
 Contains:
 
-* `22_04.parquet` – original dataset
-* `22_04_full.parquet` – enriched dataset with historical features
 * `22_04_train.parquet` – training subset
 * `22_04_test.parquet` – test subset
 
-The train/test split is performed chronologically using a **70% / 30%** partition.
+These files correspond to the processed and enriched versions used throughout the experiments, after the chronological 70%/30% train-test split adopted in the paper.
 
 ---
 
