@@ -16,15 +16,12 @@ The repository is organized into three main directories that collectively reprod
 
 The complete experimental pipeline is illustrated in Figure 1.
 
-## Experimental Workflow
-
 <p align="center">
   <img src="images/pipeline_colored.png"
        alt="Experimental pipeline"
        width="900">
 </p>
 
-**Figure 1.** Overview of the experimental workflow.
 ---
 
 # 1. Job Duration Prediction
